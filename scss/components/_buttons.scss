@@ -1,0 +1,16 @@
+.button {
+  width: 220px;
+  height: 55px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 32px;
+  background-color: $color-primary-light;
+  box-shadow: none;
+  border: 2px solid $color-primary-light;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $color-primary-dark;
+  }
+}

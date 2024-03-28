@@ -1,0 +1,80 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(232, 229, 229, 0.25);
+  background-image: linear-gradient((to bottom, #444444, rgba(68, 68, 68, 0)));
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 32px 0 16px;
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: $color-primary-light;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    width: 60px;
+
+    &:hover {
+      width: 65px;
+    }
+  }
+
+  &__title {
+    margin-top: -15px;
+    font-family: "Play", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+.nav {
+  display: none;
+  gap: 40px;
+  flex-grow: 1;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 56px;
+  }
+
+  &__item {
+    font-size: 1.5rem;
+
+    &:hover,
+    &:focus {
+      color: $color-primary-light;
+    }
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+  }
+}
